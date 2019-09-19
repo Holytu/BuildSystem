@@ -1,0 +1,3 @@
+NPP_SAVE
+cd $(CURRENT_DIRECTORY)
+cmd /c g++ -utf-8 -pedantic -Wall -W -Wconversion -Wshadow -Wcast-qual -Wwrite-strings $(FILE_NAME) -o $(NAME_PART).exe & IF ERRORLEVEL 1 (echo. && echo Syntax errors were found during compiling.) ELSE ($(NAME_PART).exe)
